@@ -1,0 +1,40 @@
+.section
+	&-title
+		font-family: "Gotham Pro Medium"
+		font-size: 34px
+		letter-spacing: 0.34px
+		text-transform: uppercase
+
+.slider-arrow
+	position: absolute
+	top: 0
+	z-index: 1
+	width: 8px
+	height: 100%
+	&:hover
+		cursor: pointer
+	&__left
+		left: -8px
+		background: url('../img/main/slider/arrows/arrow-prev.png') center no-repeat
+		&:hover
+			background: url('../img/main/slider/arrows/arrow-prev-active.png') center no-repeat
+	&__right
+		right: -8px
+		background: url('../img/main/slider/arrows/arrow-next.png') center no-repeat
+		&:hover
+			background: url('../img/main/slider/arrows/arrow-next-active.png') center no-repeat
+
+.button
+	width: 300px
+	height: 70px
+	padding: 0
+	font-family: "Gotham Pro Medium"
+	font-size: 18px
+	letter-spacing: 0.18px
+	line-height: 70px
+	text-transform: uppercase
+	background-color: #ff2e55
+	color: $text-color-light
+	&:hover
+		background-color: #ff1844
+		box-shadow: 0 0 16px rgba(242, 72, 65, 0.39)
