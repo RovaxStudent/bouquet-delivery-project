@@ -1,7 +1,7 @@
 *
 	box-sizing: border-box
 
-body
+body, h1
 	margin: 0
 	padding: 0
 
@@ -13,6 +13,12 @@ a
 
 button
 	border: none
+	&:focus
+		outline: none
+
+input
+	&:focus
+		outline: none
 
 .slick-initialized .slick-slide
     float: none

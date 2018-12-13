@@ -9,20 +9,28 @@
 	position: absolute
 	top: 0
 	z-index: 1
-	width: 8px
+	width: 21px
 	height: 100%
 	&:hover
 		cursor: pointer
-	&__left
-		left: -8px
-		background: url('../img/main/slider/arrows/arrow-prev.png') center no-repeat
-		&:hover
-			background: url('../img/main/slider/arrows/arrow-prev-active.png') center no-repeat
-	&__right
-		right: -8px
-		background: url('../img/main/slider/arrows/arrow-next.png') center no-repeat
-		&:hover
-			background: url('../img/main/slider/arrows/arrow-next-active.png') center no-repeat
+	&-main
+		&__left
+			left: -25px
+			background: url('../img/main/slider/arrows/arrow-prev.png') center no-repeat
+			&:hover
+				background: url('../img/main/slider/arrows/arrow-prev-active.png') center no-repeat
+		&__right
+			right: -25px
+			background: url('../img/main/slider/arrows/arrow-next.png') center no-repeat
+			&:hover
+				background: url('../img/main/slider/arrows/arrow-next-active.png') center no-repeat
+	&-features
+		&__left
+			left: 0
+			background: url('../img/features/slider/arrows/arrow-prev.png') center no-repeat
+		&__right
+			right: 0
+			background: url('../img/features/slider/arrows/arrow-next.png') center no-repeat
 
 .button
 	width: 300px
@@ -35,6 +43,27 @@
 	text-transform: uppercase
 	background-color: #ff2e55
 	color: $text-color-light
+	cursor: pointer
 	&:hover
 		background-color: #ff1844
 		box-shadow: 0 0 16px rgba(242, 72, 65, 0.39)
+	&-stock
+		width: 140px
+		height: 40px
+		font-size: 14px
+		line-height: 40px
+		background-color: #f24841
+
+
+.number
+	span
+		margin: 0 10px
+		cursor: pointer
+	&-input
+		width: 40px
+		height: 40px
+		margin-bottom: 20px
+		text-align: center
+		background-color: $bg-color-dark
+		color: $text-color-light
+		border: 2px solid #fff
