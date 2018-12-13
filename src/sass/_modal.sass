@@ -1,0 +1,85 @@
+.overlay
+	position: fixed
+	top: 0
+	z-index: 3
+	display: none
+	justify-content: center
+	align-items: center
+	width: 100vw
+	height: 100vh
+	background-color: rgba(#000, 0.5)
+.popup
+	position: relative
+	width: 516px
+	display: flex
+	flex-direction: column
+	align-items: center
+	color: #1c1c1c
+	&-contact
+		background: #f8f6f0 url("../img/modal/rose-2.png") bottom left no-repeat
+	&-close
+		position: absolute
+		top: 0
+		right: -50px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 40px
+		height: 40px
+		font-size: 30px
+		color: #fff
+		border: 2px solid #ffffff
+		border-radius: 50%
+		cursor: pointer
+		&:hover
+			color: #ff1844
+	&-title
+		width: 100%
+		min-height: 70px
+		font-family: "Gotham Pro Medium"
+		font-size: 20px
+		line-height: 70px
+		text-align: center
+		text-transform: uppercase
+		background-color: #ff2e55
+		color: $text-color-light
+	&-form
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 20px 0
+		font-size: 20px
+		&__header
+			margin-bottom: 20px
+		&__input
+			margin-bottom: 20px
+			width: 250px
+			height: 40px
+			font-size: 15px
+			text-align: center
+	&-flowers
+		padding: 
+			top: 57px
+			bottom: 52px
+		background: url("../img/modal/rose-1.png") top right no-repeat, url("../img/modal/rose-2.png") bottom left no-repeat
+		background-color: #f8f6f0
+	&-text
+		&__flower
+			margin-bottom: 29px
+			font-family: "Gotham Pro Medium"
+			font-size: 24px
+			text-transform: uppercase
+			color: #f64f6b
+		&__descr
+			max-width: 400px
+			line-height: 1.2
+			color: #1c1c1c
+	&-thanks
+		background: #f8f6f0 url("../img/modal/rose-2.png") bottom left no-repeat
+		&__text
+			padding: 60px 20px
+			text-align: center
+
+		
+
+

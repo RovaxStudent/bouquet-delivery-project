@@ -26,7 +26,8 @@ button:focus {
   outline: none;
 }
 
-input:focus {
+input:focus,
+.slick-slide:focus {
   outline: none;
 }
 
@@ -34,6 +35,137 @@ input:focus {
   float: none;
   display: inline-block;
   vertical-align: middle;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  position: relative;
+  width: 516px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #1c1c1c;
+}
+
+.popup-contact {
+  background: #f8f6f0 url("../img/modal/rose-2.png") bottom left no-repeat;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #ff1844;
+}
+
+.popup-title {
+  width: 100%;
+  min-height: 70px;
+  font-family: "Gotham Pro Medium";
+  font-size: 20px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ff2e55;
+  color: #fff;
+}
+
+.popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.popup-form__header {
+  margin-bottom: 20px;
+}
+
+.popup-form__input {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.popup-flowers {
+  padding-top: 57px;
+  padding-bottom: 52px;
+  background: url("../img/modal/rose-1.png") top right no-repeat, url("../img/modal/rose-2.png") bottom left no-repeat;
+  background-color: #f8f6f0;
+}
+
+.popup-text__flower {
+  margin-bottom: 29px;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #f64f6b;
+}
+
+.popup-text__descr {
+  max-width: 400px;
+  line-height: 1.2;
+  color: #1c1c1c;
+}
+
+.popup-thanks {
+  background: #f8f6f0 url("../img/modal/rose-2.png") bottom left no-repeat;
+}
+
+.popup-thanks__text {
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .section-title {
