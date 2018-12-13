@@ -1,0 +1,64 @@
+.features
+	padding:
+		top: 93px
+		bottom: 96px
+	text-align: center
+	border-bottom: 1px solid $border-bottom-color
+	&-title
+		margin-bottom: 93px
+		font-size: 30px
+	&-slider
+		margin-bottom: 100px
+		padding: 0 81px
+		text-align: initial
+		&__person
+			position: relative
+			z-index: 0
+			display: inline-block
+			vertical-align: middle
+			margin-right: 49px
+			width: 220px
+			height: 220px
+			font-family: "Gotham Pro Medium"
+			font-size: 20px
+			line-height: 220px
+			text-align: center
+			border-radius: 50%
+			background: $bg-color-dark url("../img/features/slider/person-bg.jpg") center no-repeat
+			span
+				font-family: "Gotham Pro Regular"
+				font-size: 18px
+			&::before
+				content: ''
+				position: absolute
+				z-index: -1
+				left: 0
+				top: 0
+				display: block
+				width: 100%
+				height: 100%
+				background-color: rgba(#292929, 0.6)
+				border-radius: 50%
+		&__feedback
+			display: inline-block
+			vertical-align: middle
+			max-width: 481px
+			font-family: "Gotham Pro Light"
+			font-size: 18px
+			line-height: 1.2
+			text-align: initial
+		&__text
+			margin-bottom: 19px
+		&__photos
+			color: #f24841
+			padding-bottom: 2px
+			border-bottom: 1px solid #f24841
+	&-block
+		&__text
+			font-family: "Gotham Pro Medium"
+			font-size: 20px
+			line-height: 1.3
+			text-transform: uppercase
+		&__img
+			min-height: 80px
+			margin-bottom: 23px
